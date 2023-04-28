@@ -10,4 +10,5 @@ def rank_user(user_id):
     user_data = get_github_user_info(user_id=user_id)
     repo_data = get_github_user_repo_info(user_id=user_id)
     result = calculate_level_on_gh_data(data=user_data, repo_data=repo_data)
-    return {"user_level": result}
+    # return {"user_level": result}
+    return result
