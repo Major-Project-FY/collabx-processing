@@ -47,10 +47,11 @@ def calculate_level_on_gh_data(data, repo_data):
         'userLevel': 'Beginner',
         'totalCommits': commits,
         'totalFollowers': followers,
-        'codeLanguages': languages,
+        'codeLanguages': languages['languages'],
         'totalPublicRepos': data['publicRepos'],
         'totalPrivateRepos': data['totalPrivateRepos'],
         'totalPublicGists': data['publicGists'],
         'gitHubAvatarUrl': data['gitHubAvatarUrl'],
-        'totalCollaborators': data['collaborators']
+        'totalCollaborators': data['collaborators'],
+        'gitHubUsername': data['gitHubUsername']
     }
